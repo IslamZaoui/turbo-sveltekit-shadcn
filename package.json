@@ -3,6 +3,11 @@
 	"description": "",
 	"private": true,
 	"scripts": {
+		"dev": "turbo dev",
+		"build": "turbo build",
+		"preview": "turbo preview",
+		"lint": "turbo lint",
+		"lint:fix": "turbo lint:fix",
 		"format": "prettier --write .",
 		"format:check": "prettier --check ."
 	},
