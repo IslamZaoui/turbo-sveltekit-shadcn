@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	import { Button } from "@repo/ui"
+
+	let count = $state(0)
+</script>
+
+<main class="flex items-center justify-center h-screen">
+	<Button onclick={() => count++}>You clicked me {count} times</Button>
+</main>
