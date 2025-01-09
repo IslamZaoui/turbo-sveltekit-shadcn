@@ -1,0 +1,21 @@
+{
+	"name": "monorepo",
+	"description": "",
+	"private": true,
+	"scripts": {
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
+	},
+	"devDependencies": {
+		"prettier": "^3.4.2",
+		"turbo": "^2.3.3"
+	},
+	"workspaces": [
+		"packages/*",
+		"apps/*"
+	],
+	"packageManager": "bun@1.1.43",
+	"engines": {
+		"node": ">=20"
+	}
+}
