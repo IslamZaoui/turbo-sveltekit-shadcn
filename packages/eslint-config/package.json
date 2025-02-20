@@ -4,11 +4,11 @@
 	"private": true,
 	"type": "module",
 	"devDependencies": {
-		"@eslint/compat": "^1.2.4",
-		"eslint": "^9.17.0",
+		"@eslint/compat": "^1.2.6",
+		"eslint": "^9.20.1",
 		"eslint-plugin-svelte": "^2.46.1",
-		"globals": "^15.14.0",
-		"typescript-eslint": "^8.19.1"
+		"globals": "^16.0.0",
+		"typescript-eslint": "^8.24.1"
 	},
 	"exports": {
 		"./svelte": "./svelte.js"

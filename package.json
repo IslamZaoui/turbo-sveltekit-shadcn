@@ -6,6 +6,7 @@
 		"dev": "turbo dev",
 		"build": "turbo build",
 		"preview": "turbo preview",
+		"check": "turbo check",
 		"lint": "turbo lint",
 		"lint:fix": "turbo lint:fix",
 		"format": "prettier --write .",
@@ -13,10 +14,10 @@
 		"ui": "bun run --cwd packages/ui ui"
 	},
 	"devDependencies": {
-		"prettier": "^3.4.2",
-		"prettier-plugin-svelte": "^3.3.2",
-		"prettier-plugin-tailwindcss": "^0.6.9",
-		"turbo": "^2.3.3"
+		"prettier": "^3.5.1",
+		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"turbo": "^2.4.2"
 	},
 	"workspaces": [
 		"packages/*",

@@ -1,7 +1,9 @@
 {
 	"$schema": "https://turbo.build/schema.json",
-	"ui": "tui",
 	"tasks": {
+		"check": {
+			"inputs": ["**/*.{js,ts,css,svelte}"]
+		},
 		"lint": {
 			"inputs": ["**/*.{js,ts,svelte}"]
 		},

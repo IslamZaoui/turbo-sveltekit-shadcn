@@ -30,7 +30,7 @@ This Turborepo includes the following packages/apps:
 ### Apps and Packages
 
 - `web`: a [sveltekit](https://kit.svelte.dev/) app
-- `@repo/ui`: a stub Svelte component library (🚀 powered by [shadcn-svelte](https://next.shadcn-svelte.com))
+- `@repo/ui`: a stub Svelte component library (🚀 powered by [shadcn-svelte](https://next.shadcn-svelte.com) & [tailwind v4](https://tailwindcss.com/blog/tailwindcss-v4) )
 - `@repo/eslint-config`: `eslint` configurations (using the recommended settings by svelte team)
 - `@repo/typescript-config`: `typescript` configurations
 
