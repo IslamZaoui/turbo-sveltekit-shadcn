@@ -3,8 +3,6 @@
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
-	"module": "src/index.ts",
-	"main": "src/index.ts",
 	"scripts": {
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"lint": "eslint .",
@@ -24,13 +22,17 @@
 		"tailwindcss": "^4.0.7"
 	},
 	"exports": {
-		".": {
-			"types": "./src/index.ts",
-			"svelte": "./src/index.ts"
+		"./components/*": {
+			"types": "./src/components/**/*.ts",
+			"svelte": "./src/components/**/*.ts",
+			"default": "./src/components/**/*.ts"
 		},
-		"./utils.js": "./src/utils",
-		"./hooks/*": "./src/hooks/*",
-		"./global.css": "./src/global.css",
-		"./tailwind.config.ts": "./tailwind.config.ts"
+		"./hooks/*": {
+			"types": "./src/hooks/**/*.ts",
+			"svelte": "./src/hooks/**/*.ts",
+			"default": "./src/hooks/**/*.ts"
+		},
+		"./utils.js": "./src/utils.ts",
+		"./global.css": "./src/global.css"
 	}
 }
