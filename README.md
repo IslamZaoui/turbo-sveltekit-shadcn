@@ -21,8 +21,6 @@ npm ui add <component-name>
 npm ui add button input
 ```
 
-Then export the added components in the [`src/index.ts`](https://github.com/IslamZaoui/turbo-sveltekit-shadcn/blob/main/packages/ui/src/index.ts) to access them.
-
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
