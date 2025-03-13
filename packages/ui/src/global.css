@@ -1,6 +1,6 @@
 /* thx to https://github.com/huntabyte/shadcn-svelte/issues/1643#issuecomment-2640645739 for the tailwind v4 migration example */
 @import "tailwindcss";
-@import "./tailwindcss-animate.css";
+@import "tw-animate-css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
