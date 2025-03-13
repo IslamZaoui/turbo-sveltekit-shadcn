@@ -1,6 +1,6 @@
 /* thx to https://github.com/huntabyte/shadcn-svelte/issues/1643#issuecomment-2640645739 for the tailwind v4 migration example */
 @import "tailwindcss";
-@import "./tailwindcss-animate.css";
+@import "tw-animate-css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -137,18 +137,18 @@
 
 	/* Keyframes */
 	@keyframes accordion-down {
-		from: {
+		from {
 			height: 0;
 		}
-		to: {
+		to {
 			height: var(--bits-accordion-content-height);
 		}
 	}
 	@keyframes accordion-up {
-		from: {
+		from {
 			height: var(--bits-accordion-content-height);
 		}
-		to: {
+		to {
 			height: 0;
 		}
 	}
