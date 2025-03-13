@@ -1,6 +1,14 @@
 {
 	"name": "@repo/ui",
 	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"ui": "bun x shadcn-svelte@next"
+	},
 	"devDependencies": {
 		"@repo/eslint-config": "*",
 		"@repo/typescript-config": "*",
@@ -27,13 +35,5 @@
 		},
 		"./utils.js": "./src/utils.ts",
 		"./global.css": "./src/global.css"
-	},
-	"private": true,
-	"scripts": {
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix",
-		"ui": "bun x shadcn-svelte@next"
-	},
-	"type": "module"
+	}
 }
