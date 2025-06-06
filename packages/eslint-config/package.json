@@ -3,13 +3,16 @@
 	"private": true,
 	"type": "module",
 	"devDependencies": {
-		"@eslint/compat": "^1.2.5",
-		"@eslint/js": "^9.18.0",
-		"eslint-plugin-svelte": "^3.0.0",
-		"globals": "^16.0.0",
-		"typescript-eslint": "^8.20.0"
+		"@antfu/eslint-config": "^4.14.1",
+		"@repo/typescript-config": "*",
+		"eslint-config-prettier": "^10.1.5"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
 	},
 	"exports": {
-		"./svelte": "./svelte.js"
+		"./svelte": "./svelte.js",
+		"./utils": "./utils.js",
+		"./types": "./types.d.ts"
 	}
 }

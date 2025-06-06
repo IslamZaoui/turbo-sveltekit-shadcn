@@ -1,8 +1,22 @@
 {
 	"name": "@repo/ui",
+	"type": "module",
 	"version": "1.0.0",
 	"private": true,
-	"type": "module",
+	"exports": {
+		"./components/*": {
+			"types": "./src/components/**/*.ts",
+			"svelte": "./src/components/**/*.ts",
+			"default": "./src/components/**/*.ts"
+		},
+		"./hooks/*": {
+			"types": "./src/hooks/**/*.ts",
+			"svelte": "./src/hooks/**/*.ts",
+			"default": "./src/hooks/**/*.ts"
+		},
+		"./utils.js": "./src/utils.ts",
+		"./global.css": "./src/global.css"
+	},
 	"scripts": {
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"lint": "eslint .",
@@ -20,19 +34,5 @@
 		"tailwind-variants": "^0.2.1",
 		"tailwindcss": "^4.0.0",
 		"tw-animate-css": "^1.3.0"
-	},
-	"exports": {
-		"./components/*": {
-			"types": "./src/components/**/*.ts",
-			"svelte": "./src/components/**/*.ts",
-			"default": "./src/components/**/*.ts"
-		},
-		"./hooks/*": {
-			"types": "./src/hooks/**/*.ts",
-			"svelte": "./src/hooks/**/*.ts",
-			"default": "./src/hooks/**/*.ts"
-		},
-		"./utils.js": "./src/utils.ts",
-		"./global.css": "./src/global.css"
 	}
 }
