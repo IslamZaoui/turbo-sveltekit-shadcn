@@ -14,9 +14,9 @@
 		"ui": "bun run --cwd packages/ui ui"
 	},
 	"devDependencies": {
-		"prettier": "^3.5.3",
+		"prettier": "^3.6.2",
 		"prettier-plugin-svelte": "^3.4.0",
-		"prettier-plugin-tailwindcss": "^0.6.12",
+		"prettier-plugin-tailwindcss": "^0.6.13",
 		"turbo": "^2.5.4"
 	},
 	"workspaces": [
